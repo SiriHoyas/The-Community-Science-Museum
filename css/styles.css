@@ -24,6 +24,11 @@ font-family: 'Roboto', sans-serif; */
 
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 @font-face {
     font-family: "flaticon";
     src: url("./flaticon.ttf?e3eeb2199bc083e80cc8c56a53b1f0b8") format("truetype"),
@@ -63,12 +68,66 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     content: "\f106";
 }
 
+h1, h2 {
+    font-family: 'Dosis', sans-serif;
+}
 
 .content-card {
     border-radius: 20px;
     box-shadow: var(--card-shadow);
+    width: 90vw;
 }
 
 .button {
     border-radius: 50%;
+    font-family: 'Dosis', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+.navbar {
+    width: 100vw;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    background-color: var(--almost-white);
+    display: none;
+    width: 80%;
+    height: 100vh;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.support-us-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.rocket-illustration {
+    width: 200px;
+}
+
+body {
+display: flex; 
+flex-direction: column; 
+}
+
+main {
+
 }

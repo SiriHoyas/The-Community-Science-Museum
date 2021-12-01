@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Roboto&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       type="text/css"
-      href="your_website_domain/css_root/flaticon.css"/>
-    <link rel="stylesheet" href="/css/styles.css"/>
+      href="your_website_domain/css_root/flaticon.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <nav></nav>
+    <div class="navbar">
+      <label for="hamburger-menu">MENU ICON</label>
+      <input type="checkbox" id="hamburger-menu">
+      <img src="/img/logo-small.png" alt="community science museum logo" />
+    
+        <nav>
+        <div class="side-menu">
+            <img src="/img/logo-large.png" alt="community science museum logo" />
+            <ul>
+                <a href="/index.html"><li><i></i> Home</li></a>
+                <a href="/exhibitions.html"><li><i></i> Exhibitions</li></a>
+                <a href="/events.html"><li><i></i> Events</li></a>
+                <a href="/visit.html"><li><i></i> Visitor information</li></a>
+            </ul>
+            <div class="support-us-wrapper">
+        <a href="/support.html" class="button">Support us</a>
+        <img src="/img/rocket.png" alt="rocket illustration" class="rocket-illustration">
+    </div>
+      </div>
+    </div>
+    </nav>
     <main>
-      <div class=".content-card" class="explore-together-card">
+      <div class="content-card" class="explore-together-card">
         <h1>Explore together</h1>
       </div>
-      <div class=".content-card" class="interactive-learning-card">
+      <div class="content-card" class="interactive-learning-card">
         <h2>Interactive learning</h2>
       </div>
-      <div class=".content-card" class="visiting-hours-card">
+      <div class="content-card" class="visiting-hours-card">
         <h2>Visiting hours</h2>
       </div>
-      <div class=".content-card" class="picture-card-small">
-      </div>
-      <div class=".content-card" class="events-card">
+      <div class="content-card" class="picture-card-small"></div>
+      <div class="content-card" class="events-card">
         <h2>String theory with Dr. Sheldon Cooper</h2>
         <h3>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -40,8 +61,7 @@
         </h3>
         <a href="/events.html" class="button">Read more</a>
       </div>
-      <div class=".content-card" class="picture-card-big">
-      </div>
+      <div class=".content-card" class="picture-card-big"></div>
     </main>
   </body>
 </html>
