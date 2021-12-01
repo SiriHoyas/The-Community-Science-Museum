@@ -68,3 +68,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     border-radius: 20px;
     box-shadow: var(--card-shadow);
 }
+
+.button {
+    border-radius: 50%;
+}
