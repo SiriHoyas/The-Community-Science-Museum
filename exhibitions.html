@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Roboto&display=swap"
-      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       type="text/css"
-      href="your_website_domain/css_root/flaticon.css"/>
-    <link rel="stylesheet" href="/css/styles.css"/>
+      href="your_website_domain/css_root/flaticon.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-      <nav></nav>
+    <div class="navbar">
+      <label for="hamburger-menu">MENU ICON</label>
+      <input type="checkbox" id="hamburger-menu">
+      <img src="/img/logo-small.png" alt="community science museum logo" />
+    
+        <nav>
+        <div class="side-menu">
+            
+            <img src="/img/logo-large.png" alt="community science museum logo" />
+            <ul>
+                <a href="/index.html"><li><i></i> Home</li></a>
+                <a href="/exhibitions.html"><li><i></i> Exhibitions</li></a>
+                <a href="/events.html"><li><i></i> Events</li></a>
+                <a href="/visit.html"><li><i></i> Visitor information</li></a>
+            </ul>
+            <div class="support-us-wrapper">
+        <a href="/support.html" class="button">Support us</a>
+        <img src="/img/rocket.png" alt="rocket illustration" class="rocket-illustration">
+    </div>
+      </div>
+    </div>
+    </nav>
       <main>
-          <h1>Exhibitions</h1>
-          <div class="content-card" class="evolution-card"> 
+          <h1 class="exhibitions-heading">Exhibitions</h1>
+          <div class="content-card evolution-card"> 
               <h2>Evolution</h2>
           </div>
-          <div class="content-card" class="robo-ai-card"> 
+          <div class="content-card robo-ai-card"> 
             <h2>Robotics and Artificial Intelligence</h2>
         </div>
-        <div class="content-card" class="cosmology-card"> 
+        <div class="content-card cosmology-card"> 
             <h2>Cosmology</h2>
         </div>
-        <div class="content-card" class="ecology-card"> 
+        <div class="content-card ecology-card"> 
             <h2>Ecology</h2>
         </div>
-        <div class="content-card" class="bioligy-medicine-card"> 
+        <div class="content-card biology-medicine-card"> 
             <h2>Biology and Medicine</h2>
         </div>
       </main>

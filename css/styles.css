@@ -4,7 +4,7 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
     --almost-white: #f9f9f9;
-    --almost-gray: #eeeeee;
+    --almost-gray: #d3d3d3;
     --grey: #707070;
     --dark-purple: #4b3f80;
     --light-purple: #c8c3de;
@@ -90,6 +90,10 @@ h3 {
     font-weight: 300;
     font-size: 1rem;
     color: var(--almost-white);
+}
+
+p {
+    color: var(--almost-gray);
 }
 
 .content-card {
@@ -228,7 +232,52 @@ margin-bottom: 30px;
 }
 
 /* Exhibitions */
+
+.exhibitions-heading {
+    color: black;
+}
+
+.evolution-card {
+    background-image: var(--blue-gradient-top), url(/img/dinosaur-exhibit.jpg);
+}
+
+.robo-ai-card {
+    background-image: var(--light-green-gradient-top), url(/img/ai-experiment.jpg);
+}
+
+.cosmology-card {
+    background-image: var(--purple-gradient-top), url(/img/cosmology.jpg);
+}
+
+.ecology-card {
+    background-image: var(--dark-green-gradient-top), url(/img/ee-trash-and-boy.jpg);
+}
+
+.biology-medicine-card {
+    background-image: var(--purple-gradient-top), url(/img/head-anatomy-model.jpg);
+}
+
+
+
 /* Exhibit */
+.dinosaur-hero {
+    background-image: url(/img/dinosaur-exhibit.jpg);
+    background-size: 200%;
+}
+
+.exhibit-information {
+    background-color: var(--dark-purple);
+    height: 400px;
+}
+
+.exhibit-information h1 {
+    margin-bottom: 10px;
+}
+
+.evolution-picture {
+    background-image: url(/img/evolution-2.jpg);
+}
+
 /* Events */
 /* Visitor information */
 /* Support us */

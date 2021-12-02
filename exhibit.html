@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Roboto&display=swap"
-      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       type="text/css"
-      href="your_website_domain/css_root/flaticon.css"/>
+      href="your_website_domain/css_root/flaticon.css"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <nav></nav>
+    <div class="navbar">
+      <label for="hamburger-menu">MENU ICON</label>
+      <input type="checkbox" id="hamburger-menu">
+      <img src="/img/logo-small.png" alt="community science museum logo" />
+    
+        <nav>
+        <div class="side-menu">
+            
+            <img src="/img/logo-large.png" alt="community science museum logo" />
+            <ul>
+                <a href="/index.html"><li><i></i> Home</li></a>
+                <a href="/exhibitions.html"><li><i></i> Exhibitions</li></a>
+                <a href="/events.html"><li><i></i> Events</li></a>
+                <a href="/visit.html"><li><i></i> Visitor information</li></a>
+            </ul>
+            <div class="support-us-wrapper">
+        <a href="/support.html" class="button">Support us</a>
+        <img src="/img/rocket.png" alt="rocket illustration" class="rocket-illustration">
+    </div>
+      </div>
+    </div>
+    </nav>
     <main>
-      <div class="content-card"></div>
-      <div class="content-card">
+      <div class="content-card dinosaur-hero"></div>
+      <div class="content-card exhibit-information">
         <h1>Evolution</h1>
         <p>
           For centuries, philosophers and scientists have wrestled with the
@@ -34,7 +56,7 @@
           Mammoth, the Dodos, and a number of dinosaurs too.
         </p>
       </div>
-      <div class="content-card"></div>
+      <div class="content-card evolution-picture"></div>
     </main>
   </body>
 </html>
