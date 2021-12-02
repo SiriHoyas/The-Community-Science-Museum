@@ -3,174 +3,202 @@ font-family: 'Dosis', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 :root {
-    --almost-white: #f9f9f9;
-    --almost-gray: #d3d3d3;
-    --grey: #707070;
-    --dark-purple: #4b3f80;
-    --light-purple: #c8c3de;
-    --light-yellow: #FFF2AE;
-    --dark-yellow: #FAEA97;
-    --light-green: #9bbea1;
-    --dark-green: #3f8073;
-    --light-brown: #b18873;
-    --dark-brown: #b18873;
+  --almost-white: #f9f9f9;
+  --almost-gray: #d3d3d3;
+  --grey: #707070;
+  --dark-purple: #4b3f80;
+  --light-purple: #c8c3de;
+  --light-yellow: #fff2ae;
+  --dark-yellow: #faea97;
+  --light-green: #9bbea1;
+  --dark-green: #3f8073;
+  --light-brown: #b18873;
+  --dark-brown: #b18873;
 
-    --blue-gradient-bottom: linear-gradient(0deg, rgba(0,29,255,0.7161239495798319) 0%, rgba(72,100,144,0.34077380952380953) 91%);
-    --purple-gradient-top: linear-gradient(0deg, rgba(128,128,128,0.1699054621848739) 46%, rgba(85,39,124,0.8421743697478992) 100%);
-    --purple-gradient-bottom: linear-gradient(0deg, rgba(96,96,150,1) 0%, rgba(128,128,128,0.15029761904761907) 100%);
-    --blue-gradient-top: linear-gradient(180deg, rgba(0,29,255,0.6797093837535014) 0%, rgba(72,100,144,0.4780287114845938) 38%);
-    --light-green-gradient-top: linear-gradient(180deg, rgba(86,175,90,0.8757878151260504) 0%, rgba(255,255,255,0.2091211484593838) 50%);
-    --dark-green-gradient-top: linear-gradient(180deg, rgba(59,92,31,0.8477766106442577) 0%, rgba(128,128,128,0.15029761904761907) 48%);
-    --white-gradient-top: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,128,128,0.15029761904761907) 58%);
-    --card-shadow: 12px 13px 12px -16px rgba(0,0,0,0.46);
-
+  --blue-gradient-bottom: linear-gradient(
+    0deg,
+    rgba(0, 29, 255, 0.7161239495798319) 0%,
+    rgba(72, 100, 144, 0.34077380952380953) 91%
+  );
+  --purple-gradient-top: linear-gradient(
+    0deg,
+    rgba(128, 128, 128, 0.1699054621848739) 46%,
+    rgba(85, 39, 124, 0.8421743697478992) 100%
+  );
+  --purple-gradient-bottom: linear-gradient(
+    0deg,
+    rgba(96, 96, 150, 1) 0%,
+    rgba(128, 128, 128, 0.15029761904761907) 100%
+  );
+  --blue-gradient-top: linear-gradient(
+    180deg,
+    rgba(0, 29, 255, 0.6797093837535014) 0%,
+    rgba(72, 100, 144, 0.4780287114845938) 38%
+  );
+  --light-green-gradient-top: linear-gradient(
+    180deg,
+    rgba(86, 175, 90, 0.8757878151260504) 0%,
+    rgba(255, 255, 255, 0.2091211484593838) 50%
+  );
+  --dark-green-gradient-top: linear-gradient(
+    180deg,
+    rgba(59, 92, 31, 0.8477766106442577) 0%,
+    rgba(128, 128, 128, 0.15029761904761907) 48%
+  );
+  --white-gradient-top: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(128, 128, 128, 0.15029761904761907) 58%
+  );
+  --card-shadow: 12px 13px 12px -16px rgba(0, 0, 0, 0.46);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 @font-face {
-    font-family: "flaticon";
-    src: url("./flaticon.ttf?e3eeb2199bc083e80cc8c56a53b1f0b8") format("truetype"),
-url("./flaticon.woff?e3eeb2199bc083e80cc8c56a53b1f0b8") format("woff"),
-url("./flaticon.woff2?e3eeb2199bc083e80cc8c56a53b1f0b8") format("woff2"),
-url("./flaticon.eot?e3eeb2199bc083e80cc8c56a53b1f0b8#iefix") format("embedded-opentype"),
-url("./flaticon.svg?e3eeb2199bc083e80cc8c56a53b1f0b8#flaticon") format("svg");
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?e3eeb2199bc083e80cc8c56a53b1f0b8") format("truetype"),
+    url("./flaticon.woff?e3eeb2199bc083e80cc8c56a53b1f0b8") format("woff"),
+    url("./flaticon.woff2?e3eeb2199bc083e80cc8c56a53b1f0b8") format("woff2"),
+    url("./flaticon.eot?e3eeb2199bc083e80cc8c56a53b1f0b8#iefix")
+      format("embedded-opentype"),
+    url("./flaticon.svg?e3eeb2199bc083e80cc8c56a53b1f0b8#flaticon")
+      format("svg");
 }
 
-i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .flaticon-house:before {
-    content: "\f101";
+  content: "\f101";
 }
 .flaticon-calendar:before {
-    content: "\f102";
+  content: "\f102";
 }
 .flaticon-location:before {
-    content: "\f103";
+  content: "\f103";
 }
 .flaticon-flasks:before {
-    content: "\f104";
+  content: "\f104";
 }
 .flaticon-menu:before {
-    content: "\f105";
+  content: "\f105";
 }
 .flaticon-magnifying-glass:before {
-    content: "\f106";
+  content: "\f106";
 }
 
-h1, h2 {
-    font-family: 'Dosis', sans-serif;
-    font-weight: 500;
-    color: var(--almost-white);
+h1,
+h2 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  color: var(--almost-white);
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    color: var(--almost-white);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--almost-white);
 }
 
 p {
-    color: var(--almost-gray);
+  color: var(--almost-gray);
 }
 
 .content-card {
-    border-radius: 20px;
-    box-shadow: var(--card-shadow);
-    height: 300px;
-    width: 90vw;
-    padding: 30px;
-    background-position: center center;
-    background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  height: 300px;
+  width: 90vw;
+  padding: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .button {
-    border-radius: 50px;
-    font-family: 'Dosis', sans-serif;
-    padding: 10px 30px;
+  border-radius: 50px;
+  font-family: "Dosis", sans-serif;
+  padding: 10px 30px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    list-style-type: none;
-    font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  font-family: "Dosis", sans-serif;
 }
-
 
 /* ---------- NAVBAR ---------- */
 
 .navbar {
-    width: 100vw;
-    margin: 0;
+  width: 100vw;
+  margin: 0;
 }
 
 nav {
-    position: fixed;
-    z-index: 100;
-    background-color: var(--almost-white);
-    display: none;
-    width: 80%;
-    height: 100vh;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--almost-white);
+  display: none;
+  width: 80%;
+  height: 100vh;
 }
 
 #hamburger-menu {
-    display: none;
+  display: none;
 }
 
 #hamburger-menu:checked ~ nav {
-    display: flex;
-    flex-direction: column;
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .support-us-wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .rocket-illustration {
-    width: 200px;
+  width: 200px;
 }
 
 /* ---------- LAYOUT ---------- */
 
 body {
-display: flex; 
-flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(6, 1fr);
-gap: 40px;
-width: 90%;
-margin: 0 auto;
-margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 40px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
 /* ---------- MOBILE ---------- */
@@ -178,110 +206,258 @@ margin-top: 60px;
 /* Index page */
 
 .explore-together-card {
-    background-image: var(--purple-gradient-bottom), url(/img/kids-with-vr-glasses.jpg);
-    display: flex;
+  background-image: var(--purple-gradient-bottom),
+    url(/img/kids-with-vr-glasses.jpg);
+  display: flex;
 }
 
-
 .explore-together-card h1 {
-align-self: flex-end;
-color: var(--almost-gray)
+  align-self: flex-end;
+  color: var(--almost-gray);
 }
 
 .interactive-learning-card {
-    background-image: var(--purple-gradient-top), url(/img/girl-with-headphones.jpg);
+  background-image: var(--purple-gradient-top),
+    url(/img/girl-with-headphones.jpg);
 }
 
 .visiting-hours-card {
-    background-image: var(--blue-gradient-top), url(/img/kids-walking-together.jpg);
-    background-size: 150%;
+  background-image: var(--blue-gradient-top),
+    url(/img/kids-walking-together.jpg);
+  background-size: 150%;
 }
 
 .picture-card-small {
-    background-image: var(--purple-gradient-top), url(/img/ai-experiment.jpg);
+  background-image: var(--purple-gradient-top), url(/img/ai-experiment.jpg);
 }
 
 .picture-card-small h2 {
-    color: var(--almost-gray);
+  color: var(--almost-gray);
 }
 
 .events-card {
-    background-color: var(--light-green);
+  background-color: var(--light-green);
 }
 
 .events-card h2 {
-    font-size: 1.6rem;
-    border-bottom: 0.4px solid var(--almost-white);
-    padding-bottom: 10px;
+  font-size: 1.6rem;
+  border-bottom: 0.4px solid var(--almost-white);
+  padding-bottom: 10px;
 }
 
 .events-card h3 {
-margin-top: 20px;
-margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .events-card-button {
-    background-color: var(--dark-green);
+  background-color: var(--dark-green);
 }
 
-
-
 .picture-card-big {
-    background-image: var(--light-green-gradient-top), url(/img/girl-anatomy-model.jpg);
-    background-position: top;
+  background-image: var(--light-green-gradient-top),
+    url(/img/girl-anatomy-model.jpg);
+  background-position: top;
 }
 
 /* Exhibitions */
 
 .exhibitions-heading {
-    color: black;
+  color: black;
 }
 
 .evolution-card {
-    background-image: var(--blue-gradient-top), url(/img/dinosaur-exhibit.jpg);
+  background-image: var(--blue-gradient-top), url(/img/dinosaur-exhibit.jpg);
 }
 
 .robo-ai-card {
-    background-image: var(--light-green-gradient-top), url(/img/ai-experiment.jpg);
+  background-image: var(--light-green-gradient-top), url(/img/ai-experiment.jpg);
 }
 
 .cosmology-card {
-    background-image: var(--purple-gradient-top), url(/img/cosmology.jpg);
+  background-image: var(--purple-gradient-top), url(/img/cosmology.jpg);
 }
 
 .ecology-card {
-    background-image: var(--dark-green-gradient-top), url(/img/ee-trash-and-boy.jpg);
+  background-image: var(--dark-green-gradient-top),
+    url(/img/ee-trash-and-boy.jpg);
 }
 
 .biology-medicine-card {
-    background-image: var(--purple-gradient-top), url(/img/head-anatomy-model.jpg);
+  background-image: var(--purple-gradient-top), url(/img/head-anatomy-model.jpg);
 }
 
-
-
-/* Exhibit */
+/* Exhibitions */
 .dinosaur-hero {
-    background-image: url(/img/dinosaur-exhibit.jpg);
-    background-size: 200%;
+  background-image: url(/img/dinosaur-exhibit.jpg);
+  background-size: 200%;
 }
 
 .exhibit-information {
-    background-color: var(--dark-purple);
-    height: 400px;
+  background-color: var(--dark-purple);
+  height: 400px;
 }
 
 .exhibit-information h1 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .evolution-picture {
-    background-image: url(/img/evolution-2.jpg);
+  background-image: url(/img/evolution-2.jpg);
 }
 
-/* Events */
 /* Visitor information */
-/* Support us */
+.visiting-hours-public-card {
+  background-color: var(--dark-purple);
+}
+.peak-hours-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-purple);
+}
 
+.visiting-hours-school-card {
+  background-color: var(--dark-green);
+}
+
+.opening-hours-research-card {
+  background-color: var(--dark-brown);
+}
+
+.map-card {
+  background-image: url(/img/map.png);
+  background-position: center center;
+  background-size: 200%;
+}
+
+/* Support us */
+.volunteer-card {
+  background-image: var(--blue-gradient-bottom),
+    url(/img/kids-raising-hands.jpg);
+}
+
+.newsletter-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-green);
+}
+
+.fundraiser-card {
+  background-image: var(--purple-gradient-top), url(/img/stars.jpg);
+}
 
 /* ---------- MEDIA QUERIES ---------- */
 
+@media screen and (min-width: 1500px) {
+  .content-card {
+    width: auto;
+    height: 400px;
+  }
+
+  main {
+    width: 60vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  /* Index page */
+  #index-main {
+    width: 60vw;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .explore-together-card {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .interactive-learning-card {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .visiting-hours-card {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .picture-card-small {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .events-card {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .picture-card-big {
+    grid-area: 3 / 1 / 4 / 4;
+  }
+
+  /* Exhibit */
+  #exhibit-main {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .dinosaur-hero {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .exhibit-information {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .evolution-picture {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  /* Exhibitions */
+  .evolution-card {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .robo-ai-card {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+
+  .cosmology-card {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+
+  .ecology-card {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .biology-medicine-card {
+    grid-area: 3 / 2 / 4 / 4;
+  }
+
+  /* Events */
+  /* Visitor information */
+  .visiting-hours-public-card {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .peak-hours-card {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+  .visiting-hours-school-card {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .opening-hours-research-card {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  .map-card {
+    grid-area: 3 / 1 / 4 / 4;
+  }
+  /* Support us */
+  #support-main {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .volunteer-card {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .newsletter-card {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  
+  .fundraiser-card {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+}
