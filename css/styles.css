@@ -4,6 +4,7 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
     --almost-white: #f9f9f9;
+    --almost-gray: #eeeeee;
     --grey: #707070;
     --dark-purple: #4b3f80;
     --light-purple: #c8c3de;
@@ -16,17 +17,19 @@ font-family: 'Roboto', sans-serif; */
 
     --blue-gradient-bottom: linear-gradient(0deg, rgba(0,29,255,0.7161239495798319) 0%, rgba(72,100,144,0.34077380952380953) 91%);
     --purple-gradient-top: linear-gradient(0deg, rgba(128,128,128,0.1699054621848739) 46%, rgba(85,39,124,0.8421743697478992) 100%);
+    --purple-gradient-bottom: linear-gradient(0deg, rgba(96,96,150,1) 0%, rgba(128,128,128,0.15029761904761907) 100%);
     --blue-gradient-top: linear-gradient(180deg, rgba(0,29,255,0.6797093837535014) 0%, rgba(72,100,144,0.4780287114845938) 38%);
     --light-green-gradient-top: linear-gradient(180deg, rgba(86,175,90,0.8757878151260504) 0%, rgba(255,255,255,0.2091211484593838) 50%);
     --dark-green-gradient-top: linear-gradient(180deg, rgba(59,92,31,0.8477766106442577) 0%, rgba(128,128,128,0.15029761904761907) 48%);
-
-    --card-shadow: 6px 0px 15px -5px rgba(0,0,0,0.45);
+    --white-gradient-top: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(128,128,128,0.15029761904761907) 58%);
+    --card-shadow: 12px 13px 12px -16px rgba(0,0,0,0.46);
 
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 @font-face {
@@ -70,17 +73,39 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 
 h1, h2 {
     font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    color: var(--almost-white);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--almost-white);
 }
 
 .content-card {
     border-radius: 20px;
     box-shadow: var(--card-shadow);
+    height: 300px;
     width: 90vw;
+    padding: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .button {
-    border-radius: 50%;
+    border-radius: 50px;
     font-family: 'Dosis', sans-serif;
+    padding: 10px 30px;
 }
 
 a {
@@ -89,6 +114,9 @@ a {
     list-style-type: none;
     font-family: 'Dosis', sans-serif;
 }
+
+
+/* ---------- NAVBAR ---------- */
 
 .navbar {
     width: 100vw;
@@ -123,6 +151,8 @@ nav {
     width: 200px;
 }
 
+/* ---------- LAYOUT ---------- */
+
 body {
 display: flex; 
 flex-direction: column; 
@@ -130,4 +160,79 @@ flex-direction: column;
 
 main {
 
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(6, 1fr);
+gap: 40px;
+width: 90%;
+margin: 0 auto;
+margin-top: 60px;
 }
+
+/* ---------- MOBILE ---------- */
+
+/* Index page */
+
+.explore-together-card {
+    background-image: var(--purple-gradient-bottom), url(/img/kids-with-vr-glasses.jpg);
+    display: flex;
+}
+
+
+.explore-together-card h1 {
+align-self: flex-end;
+color: var(--almost-gray)
+}
+
+.interactive-learning-card {
+    background-image: var(--purple-gradient-top), url(/img/girl-with-headphones.jpg);
+}
+
+.visiting-hours-card {
+    background-image: var(--blue-gradient-top), url(/img/kids-walking-together.jpg);
+    background-size: 150%;
+}
+
+.picture-card-small {
+    background-image: var(--purple-gradient-top), url(/img/ai-experiment.jpg);
+}
+
+.picture-card-small h2 {
+    color: var(--almost-gray);
+}
+
+.events-card {
+    background-color: var(--light-green);
+}
+
+.events-card h2 {
+    font-size: 1.6rem;
+    border-bottom: 0.4px solid var(--almost-white);
+    padding-bottom: 10px;
+}
+
+.events-card h3 {
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+.events-card-button {
+    background-color: var(--dark-green);
+}
+
+
+
+.picture-card-big {
+    background-image: var(--light-green-gradient-top), url(/img/girl-anatomy-model.jpg);
+    background-position: top;
+}
+
+/* Exhibitions */
+/* Exhibit */
+/* Events */
+/* Visitor information */
+/* Support us */
+
+
+/* ---------- MEDIA QUERIES ---------- */
+
