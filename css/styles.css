@@ -213,7 +213,6 @@ main {
 
 .explore-together-card h1 {
   align-self: flex-end;
-  color: var(--almost-gray);
 }
 
 .interactive-learning-card {
@@ -231,9 +230,7 @@ main {
   background-image: var(--purple-gradient-top), url(/img/ai-experiment.jpg);
 }
 
-.picture-card-small h2 {
-  color: var(--almost-gray);
-}
+
 
 .events-card {
   background-color: var(--light-green);
@@ -348,20 +345,38 @@ main {
 
 /* ---------- MEDIA QUERIES ---------- */
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1100px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.navbar {
+  width: 20%;
+}
+
+main {
+  width: 70%;
+  margin-right: 70px;
+  margin-left: 0;
+}
+  #hamburger-menu {
+    display: revert;
+  }
+  
   .content-card {
     width: auto;
-    height: 400px;
+    height: 300px;
   }
 
   main {
-    width: 60vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
   /* Index page */
   #index-main {
-    width: 60vw;
+    width: 70vw;
     grid-template-rows: repeat(3, 1fr);
   }
 
