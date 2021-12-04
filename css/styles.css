@@ -139,6 +139,11 @@ p {
   padding: 30px;
   background-position: center center;
   background-repeat: no-repeat;
+  transition: 450ms ease;
+}
+
+.content-card:hover {
+  transform: rotate(.5deg);
 }
 
 .button {
@@ -402,6 +407,7 @@ main {
   .content-card {
     width: auto;
     height: 300px;
+    background-size: 200%;
   }
 
   main {
@@ -508,5 +514,11 @@ main {
 
   .fundraiser-card {
     grid-area: 2 / 2 / 3 / 4;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .content-card {
+    height: 500px;
   }
 }
