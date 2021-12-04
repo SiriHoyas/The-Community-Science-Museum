@@ -63,48 +63,6 @@ font-family: 'Roboto', sans-serif; */
   font-family: "Roboto", sans-serif;
 }
 
-@font-face {
-  font-family: "flaticon";
-  src: url("./flaticon.ttf?e3eeb2199bc083e80cc8c56a53b1f0b8") format("truetype"),
-    url("./flaticon.woff?e3eeb2199bc083e80cc8c56a53b1f0b8") format("woff"),
-    url("./flaticon.woff2?e3eeb2199bc083e80cc8c56a53b1f0b8") format("woff2"),
-    url("./flaticon.eot?e3eeb2199bc083e80cc8c56a53b1f0b8#iefix")
-      format("embedded-opentype"),
-    url("./flaticon.svg?e3eeb2199bc083e80cc8c56a53b1f0b8#flaticon")
-      format("svg");
-}
-
-i[class^="flaticon-"]:before,
-i[class*=" flaticon-"]:before {
-  font-family: flaticon !important;
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.flaticon-house:before {
-  content: "\f101";
-}
-.flaticon-calendar:before {
-  content: "\f102";
-}
-.flaticon-location:before {
-  content: "\f103";
-}
-.flaticon-flasks:before {
-  content: "\f104";
-}
-.flaticon-menu:before {
-  content: "\f105";
-}
-.flaticon-magnifying-glass:before {
-  content: "\f106";
-}
-
 h1,
 h2 {
   font-family: "Dosis", sans-serif;
@@ -131,7 +89,13 @@ p {
   color: var(--almost-gray);
 }
 
-.content-card {
+svg {
+  height: 1rem;
+  width: 1rem;
+  margin-right: .5rem;
+}
+
+.content-card, .content-card-static  {
   border-radius: 20px;
   box-shadow: var(--card-shadow);
   height: 300px;
@@ -139,11 +103,14 @@ p {
   padding: 30px;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.content-card {
   transition: 450ms ease;
 }
 
 .content-card:hover {
-  transform: rotate(.5deg);
+  transform: rotate(1.5deg);
 }
 
 .button {
@@ -173,6 +140,28 @@ nav {
   box-shadow: var(--menu-shadow);
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar label {
+  z-index: 2;
+  position: fixed;
+  left: 0;
+}
+
+.navbar label svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 18px;
+  margin-top: 30px;
+}
+
+.navbar img {
+  margin-top: 15px;
+}
+
 #hamburger-menu {
   display: none;
 }
@@ -181,6 +170,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  left: 0;
 }
 
 .side-menu img {
@@ -215,8 +205,6 @@ nav {
   transition: 1s;
 }
 
-
-
 .rocket-illustration {
   width: 200px;
 }
@@ -243,7 +231,8 @@ main {
 /* Index page */
 
 #index-main {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  margin-top: 20px;
 }
 
 .explore-together-card {
@@ -257,7 +246,7 @@ main {
 }
 
 .interactive-learning-card {
-  background-image: var(--purple-gradient-top),
+  background-image:
     url(/img/girl-with-headphones.jpg);
 }
 
@@ -268,7 +257,7 @@ main {
 }
 
 .picture-card-small {
-  background-image: var(--purple-gradient-top), url(/img/ai-experiment.jpg);
+  background-image: url(/img/ai-experiment.jpg);
 }
 
 .events-card {
@@ -395,16 +384,26 @@ main {
     width: 20%;
   }
 
+  .navbar label {
+    display: none;
+  }
+
   main {
     width: 70%;
     margin-right: 70px;
     margin-left: 0;
   }
   #hamburger-menu {
-    display: revert;
+    display: none;
+  }
+  #hamburger-menu ~ img {
+    display: none;
+  }
+  #hamburger-menu ~ nav {
+    display: block;
   }
 
-  .content-card {
+  .content-card, .content-card-static {
     width: auto;
     height: 300px;
     background-size: 200%;
