@@ -391,6 +391,13 @@ main {
     display: none;
   }
 
+  .side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
   main {
     width: 70%;
     margin-right: 70px;
