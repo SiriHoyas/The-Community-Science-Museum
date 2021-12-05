@@ -52,15 +52,19 @@ font-family: 'Roboto', sans-serif; */
   );
   --card-shadow: 12px 13px 12px -16px rgba(0, 0, 0, 0.46);
 
-  --menu-shadow: 3px 0px 21px 1px rgba(0,0,0,0.33);
+  --menu-shadow: 3px 0px 21px 1px rgba(0, 0, 0, 0.33);
 
-  --button-shadow: 3px 3px 10px -5px rgba(0,0,0,0.23);
+  --button-shadow: 3px 3px 10px -5px rgba(0, 0, 0, 0.23);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--almost-white);
 }
 
 h1,
@@ -92,10 +96,11 @@ p {
 svg {
   height: 1rem;
   width: 1rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
-.content-card, .content-card-static  {
+.content-card,
+.content-card-static {
   border-radius: 20px;
   box-shadow: var(--card-shadow);
   height: 300px;
@@ -134,33 +139,32 @@ nav {
   background-color: var(--almost-white);
   display: none;
   width: 300px;
-  height: 100vh;
-  margin-top: -62px;
-  padding-top: 50px;
+  padding-top: 20px;
   box-shadow: var(--menu-shadow);
 }
 
 .navbar {
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--almost-white);
 }
 
 .navbar label {
   z-index: 2;
   position: fixed;
   left: 0;
+  margin-top: 16px;
 }
 
 .navbar label svg {
   height: 1.5rem;
   width: 1.5rem;
-  margin-left: 18px;
-  margin-top: 30px;
+  margin-left: 20px;
 }
 
-.navbar img {
-  margin-top: 15px;
-}
+
 
 #hamburger-menu {
   display: none;
@@ -246,8 +250,7 @@ main {
 }
 
 .interactive-learning-card {
-  background-image:
-    url(/img/girl-with-headphones.jpg);
+  background-image: url(/img/girl-with-headphones.jpg);
 }
 
 .visiting-hours-card {
@@ -381,7 +384,7 @@ main {
   }
 
   .navbar {
-    width: 20%;
+    justify-content: center;
   }
 
   .navbar label {
@@ -401,9 +404,13 @@ main {
   }
   #hamburger-menu ~ nav {
     display: block;
+    position: sticky;
+    top: 0;
+    height: 100vh;
   }
 
-  .content-card, .content-card-static {
+  .content-card,
+  .content-card-static {
     width: auto;
     height: 300px;
     background-size: 200%;
@@ -415,7 +422,7 @@ main {
   }
   /* Index page */
   #index-main {
-    width: 70vw;
+    width: 66vw;
     grid-template-rows: repeat(3, 1fr);
   }
 
