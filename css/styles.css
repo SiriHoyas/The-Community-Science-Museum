@@ -108,6 +108,8 @@ svg {
   padding: 30px;
   background-position: center center;
   background-repeat: no-repeat;
+  object-fit: cover;
+  
 }
 
 .content-card {
@@ -175,10 +177,6 @@ nav {
   left: 0;
   height: 100vh;
 }
-
-/* .side-menu img {
-  margin-bottom: 60px;
-} */
 
 .csm-logo-large {
   width: 150px;
@@ -249,13 +247,21 @@ main {
 }
 
 .explore-together-card {
-  background-image: var(--purple-gradient-bottom),
-    url(/img/kids-with-vr-glasses.jpg);
+  background-image: var(--blue-gradient-bottom),
+  url(/img/explore-together.jpg);
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .explore-together-card h1 {
-  align-self: flex-end;
+  /* align-self: flex-end; */
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  fill: var(--almost-white);
 }
 
 .interactive-learning-card {
@@ -263,7 +269,7 @@ main {
 }
 
 .visiting-hours-card {
-  background-image: var(--blue-gradient-top),
+  background-image: var(--purple-gradient-top),
     url(/img/kids-walking-together.jpg);
   background-size: 150%;
 }
@@ -277,18 +283,22 @@ main {
 }
 
 .events-card h2 {
-  font-size: 1.6rem;
-  border-bottom: 0.4px solid var(--almost-white);
+  font-size: 1.2rem;
+  border-bottom: 0.4px solid black;
   padding-bottom: 10px;
+  color: black;
 }
 
-.events-card h3 {
+.events-card p {
+  font-size: .7rem;
+  color: black;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
 .events-card-button {
   background-color: var(--dark-green);
+  color: var(--almost-white);
 }
 
 .picture-card-big {
@@ -407,11 +417,6 @@ main {
     height: 100vh;
   }
 
-  main {
-    width: 70%;
-    margin-right: 70px;
-    margin-left: 0;
-  }
   #hamburger-menu {
     display: none;
   }
@@ -423,6 +428,7 @@ main {
     position: sticky;
     top: 0;
     height: 100vh;
+    width: 265px;
   }
 
   .content-card,
@@ -438,8 +444,10 @@ main {
   }
   /* Index page */
   #index-main {
-    width: 66vw;
+    margin-left: 70px;
+    margin-right: 70px;
     grid-template-rows: repeat(3, 1fr);
+    
   }
 
   .explore-together-card {
@@ -540,7 +548,7 @@ main {
 }
 
 @media screen and (min-width: 2000px) {
-  .content-card {
+  .content-card, .content-card-static {
     height: 500px;
   }
 }
