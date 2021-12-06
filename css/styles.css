@@ -366,27 +366,88 @@ main {
 }
 
 /* Visitor information */
-.visiting-hours-public-card {
-  background-color: var(--dark-purple);
+#visit-main .content-card-static {
+  height: 400px;
 }
+
+.visiting-hours-public-card {
+  background-color: var(--light-purple);
+}
+
+.visiting-hours-public-card h1 {
+  color: black;
+  font-size: 1.9rem;
+  margin-bottom: 5px;
+}
+
+.visiting-hours-public-card h2 {
+  color: black;
+  font-size: .9rem;
+  margin-bottom: 20px;
+}
+
+.visiting-hours-public-card h3 {
+  color: black;
+  font-size: .7rem;
+  margin-bottom: 10px;
+}
+
 .peak-hours-card {
   display: flex;
   flex-direction: column;
-  background-color: var(--light-purple);
+  background-color: var(--dark-purple);
+}
+
+.peak-hours-card label {
+  font-size: .7rem;
+  color: var(--almost-gray);
+  margin-top: 10px;
+}
+
+.peak-hours-card select {
+  width: 100px;
+  border: none;
+  margin-top: 5px;
+}
+
+.peak-hours-card img {
+  max-width: 500px;
+  margin-top: 50px;
+
 }
 
 .visiting-hours-school-card {
   background-color: var(--dark-green);
 }
 
+.visiting-hours-school-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.visiting-hours-school-card h3 {
+  font-size: .7rem;
+  margin-bottom: 10px;
+}
+
 .opening-hours-research-card {
   background-color: var(--dark-brown);
+}
+
+.opening-hours-research-card h2  {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.opening-hours-research-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 .map-card {
   background-image: url(/img/map.png);
   background-position: center center;
-  background-size: 200%;
+  background-size: cover;
 }
 
 /* Support us */
