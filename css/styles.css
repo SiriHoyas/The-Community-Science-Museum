@@ -197,12 +197,16 @@ nav {
   padding: 0;
 }
 
-.side-menu a li {
+.side-menu li a  {
   font-size: 1.1rem;
-  margin-bottom: 30px;
   font-family: "Dosis", sans-serif;
   letter-spacing: 0.05rem;
   font-weight: bold;
+}
+
+.side-menu li {
+  list-style-type: none;
+  margin-bottom: 30px;
 }
 
 .support-us-wrapper {
