@@ -249,7 +249,6 @@ main {
 /* ---------- MOBILE ---------- */
 
 /* Index page */
-
 #index-main {
   margin-bottom: 200px;
   margin-top: 20px;
@@ -392,14 +391,67 @@ main {
 
 /* Support us */
 .volunteer-card {
-  background-image: var(--blue-gradient-bottom),
+  background-image: var(--dark-blue-purple-top),
     url(/img/kids-raising-hands.jpg);
+}
+
+.volunteer-card h1 {
+  font-size: 2rem;
+}
+
+.volunteer-card h2 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.volunteer-card p {
+  color: var(--almost-white);
 }
 
 .newsletter-card {
   display: flex;
   flex-direction: column;
   background-color: var(--light-green);
+}
+
+.newsletter-card form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.newsletter-card h2 {
+  font-size: 1.4rem;
+}
+
+.newsletter-card h3 {
+  font-size: .8rem;
+  margin-bottom: 30px;
+}
+
+.newsletter-card label {
+  color: var(--grey);
+  font-size: .9rem;
+}
+
+#email {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  background-color: var(--dark-purple);
+  border: none;
+  color: var(--almost-white);
+}
+
+#submit:hover {
+  background-color: var(--light-purple);
+  color: var(--dark-purple);
 }
 
 .fundraiser-card {
@@ -545,9 +597,7 @@ main {
     grid-area: 3 / 1 / 4 / 4;
   }
   /* Support us */
-  #support-main {
-    grid-template-rows: repeat(2, 1fr);
-  }
+ 
 
   .volunteer-card {
     grid-area: 1 / 1 / 2 / 4;
