@@ -315,7 +315,6 @@ main {
 }
 
 /* Exhibitions */
-
 .exhibitions-heading {
   color: black;
 }
@@ -341,19 +340,26 @@ main {
   background-image: var(--purple-gradient-top), url(/img/head-anatomy-model.jpg);
 }
 
-/* Exhibitions */
+/* Exhibit*/
+#exhibit-main {
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 100px;
+}
 .dinosaur-hero {
   background-image: url(/img/dinosaur-exhibit.jpg);
-  background-size: 200%;
+  
 }
 
 .exhibit-information {
   background-color: var(--dark-purple);
-  height: 400px;
 }
 
 .exhibit-information h1 {
   margin-bottom: 10px;
+}
+
+.exhibit-information p {
+  font-size: .75rem;
 }
 
 .evolution-picture {
@@ -490,6 +496,10 @@ main {
 
   .exhibit-information {
     grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .exhibit-information p {
+    font-size: 1rem;
   }
 
   .evolution-picture {
