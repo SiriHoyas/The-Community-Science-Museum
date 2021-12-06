@@ -50,6 +50,12 @@ font-family: 'Roboto', sans-serif; */
     rgba(255, 255, 255, 1) 0%,
     rgba(128, 128, 128, 0.15029761904761907) 58%
   );
+  --dark-blue-purple-top: linear-gradient(
+    0deg,
+    rgba(75, 35, 154, 0.3603816526610645) 40%,
+    rgba(41, 10, 102, 0.9122023809523809) 100%
+  );
+
   --card-shadow: 12px 13px 12px -16px rgba(0, 0, 0, 0.46);
 
   --menu-shadow: 3px 0px 21px 1px rgba(0, 0, 0, 0.33);
@@ -109,7 +115,7 @@ svg {
   background-position: center center;
   background-repeat: no-repeat;
   object-fit: cover;
-  
+  background-size: cover;
 }
 
 .content-card {
@@ -247,15 +253,11 @@ main {
 }
 
 .explore-together-card {
-  background-image: var(--blue-gradient-bottom),
-  url(/img/explore-together.jpg);
+  background-image: var(--blue-gradient-bottom), url(/img/explore-together.jpg);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-}
-
-.explore-together-card h1 {
-  /* align-self: flex-end; */
+  background-size: 150%;
 }
 
 .arrow {
@@ -269,7 +271,7 @@ main {
 }
 
 .visiting-hours-card {
-  background-image: var(--purple-gradient-top),
+  background-image: var(--dark-blue-purple-top),
     url(/img/kids-walking-together.jpg);
   background-size: 150%;
 }
@@ -290,7 +292,7 @@ main {
 }
 
 .events-card p {
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: black;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -301,10 +303,12 @@ main {
   color: var(--almost-white);
 }
 
+.events-card-button:hover {
+  background-color: var(--dark-purple);
+}
+
 .picture-card-big {
-  background-image: var(--light-green-gradient-top),
-    url(/img/girl-anatomy-model.jpg);
-  background-position: top;
+  background-image: var(--purple-gradient-top), url(/img/research-facility.jpg);
 }
 
 /* Exhibitions */
@@ -413,7 +417,7 @@ main {
   .side-menu {
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
     height: 100vh;
   }
 
@@ -435,7 +439,6 @@ main {
   .content-card-static {
     width: auto;
     height: 300px;
-    background-size: 200%;
   }
 
   main {
@@ -444,10 +447,8 @@ main {
   }
   /* Index page */
   #index-main {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 70px;
     grid-template-rows: repeat(3, 1fr);
-    
   }
 
   .explore-together-card {
@@ -547,8 +548,33 @@ main {
   }
 }
 
+@media screen and (min-width: 1450px) {
+  .events-card h2 {
+    font-size: 1.5rem;
+    
+  }
+  
+  .events-card p {
+    font-size: 0.9rem;
+  }
+}
+
 @media screen and (min-width: 2000px) {
-  .content-card, .content-card-static {
+  .content-card,
+  .content-card-static {
     height: 500px;
+  }
+
+  .events-card h2 {
+    font-size: 2.5rem;
+    
+  }
+  
+  .events-card p {
+    font-size: 1.5rem;
+  }
+
+  .events-card-button {
+    font-size: 2rem;
   }
 }
