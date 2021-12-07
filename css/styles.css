@@ -13,7 +13,7 @@ font-family: 'Roboto', sans-serif; */
   --light-green: #9bbea1;
   --dark-green: #3f8073;
   --light-brown: #b18873;
-  --dark-brown: #b18873;
+  --dark-brown: #47362e;
 
   --blue-gradient-bottom: linear-gradient(
     0deg,
@@ -365,6 +365,71 @@ main {
   background-image: url(/img/evolution-2.jpg);
 }
 
+/* Events */
+#events-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+#events-main h1 {
+  color: black;
+  font-size: 2rem;
+  align-self: flex-start;
+}
+
+.event {
+  display: flex;
+  background-color: var(--light-green);
+  border-radius: 20px;
+  height: 150px;
+  max-width: 650px;
+  width: 100%;
+}
+
+.date {
+  background-color: var(--dark-green);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.event-information h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.event-information p {
+  color: black;
+  font-size: .7rem;
+  margin-right: 20px;
+}
+
+.purple .date {
+  background-color: var(--dark-purple);
+}
+
+.purple {
+  background-color: var(--light-purple);
+}
+
+.brown .date {
+  background-color: var(--dark-brown);
+}
+
+.brown {
+  background-color: var(--light-brown);
+}
+
 /* Visitor information */
 #visit-main .content-card-static {
   height: 400px;
@@ -641,6 +706,19 @@ main {
   }
 
   /* Events */
+  .date {
+    height: 150px;
+    width: 250px;
+  }
+
+  .event-information h3 {
+    font-size: 2rem;
+  }
+
+  .event-information p {
+    font-size: 1rem;
+  }
+
   /* Visitor information */
   .visiting-hours-public-card {
     grid-area: 1 / 1 / 2 / 2;
