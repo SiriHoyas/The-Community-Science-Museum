@@ -190,7 +190,7 @@ nav {
 }
 
 .rocket-illustration {
-  width: 100px;
+  width: 150px;
 }
 
 .side-menu ul {
@@ -227,7 +227,20 @@ nav {
 
 .support-us-wrapper a:hover {
   background-color: var(--dark-yellow);
-  transition: 1s;
+  
+}
+
+.navbar li a{
+  transition: .4s;
+}
+
+.navbar li a:hover {
+  border: 1px solid var(--dark-purple);
+  border-radius: 20px;
+  padding: 10px 20px; 
+  background-color: var(--dark-purple);
+  color: var(--almost-white);
+  
 }
 
 /* ---------- LAYOUT ---------- */
