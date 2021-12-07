@@ -223,10 +223,11 @@ nav {
   margin-bottom: 20px;
   margin-top: 10px;
   box-shadow: var(--button-shadow);
+  transition: ease-in-out 200ms;
 }
 
 .support-us-wrapper a:hover {
-  background-color: var(--dark-yellow);
+  background-color: var(--light-green);
   
 }
 
