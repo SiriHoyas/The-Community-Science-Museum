@@ -135,6 +135,10 @@ a {
   font-family: "Dosis", sans-serif;
 }
 
+:focus {
+  border: 3px solid skyblue;
+}
+
 /* ---------- NAVBAR ---------- */
 
 nav {
