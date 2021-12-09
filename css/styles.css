@@ -650,8 +650,9 @@ main {
   }
   #hamburger-menu ~ nav {
     display: block;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     height: 100vh;
     width: 265px;
   }
@@ -666,10 +667,10 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: 70px;
+    margin-left: 300px;
   }
   /* Index page */
   #index-main {
-    margin: 70px;
     grid-template-rows: repeat(3, 1fr);
   }
 
