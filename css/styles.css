@@ -257,6 +257,7 @@ main {
   gap: 40px;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 /* ---------- MOBILE ---------- */
@@ -327,6 +328,10 @@ main {
 }
 
 /* Exhibitions */
+#exhibitions-main {
+  grid-template-rows: repeat(5, 1fr);
+}
+
 .exhibitions-heading {
   color: black;
 }
@@ -541,6 +546,10 @@ main {
 }
 
 /* Support us */
+
+#support-main {
+  grid-template-rows: repeat(3, 1fr);
+}
 .volunteer-card {
   background-image: var(--dark-blue-purple-top),
     url(/img/kids-raising-hands.jpg);
@@ -767,6 +776,9 @@ main {
   }
 
   /* Support us */
+  #support-main {
+    grid-template-rows: repeat(2, 1fr);
+  }
   .volunteer-card {
     grid-area: 1 / 1 / 2 / 4;
   }
