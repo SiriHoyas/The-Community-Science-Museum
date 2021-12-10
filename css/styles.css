@@ -333,7 +333,7 @@ main {
 
 /* Exhibitions */
 #exhibitions-main {
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .exhibitions-heading {
