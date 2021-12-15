@@ -26,6 +26,13 @@
     rgba(96, 96, 150, 1) 0%,
     rgba(128, 128, 128, 0.15029761904761907) 100%
   );
+
+  --purple-gradient-top-long: linear-gradient(
+    180deg,
+    rgba(85, 39, 124, 0.7917542016806722) 41%,
+    rgba(0, 0, 0, 0) 66%
+  );
+
   --blue-gradient-top: linear-gradient(
     180deg,
     rgba(0, 29, 255, 0.6797093837535014) 0%,
@@ -33,9 +40,10 @@
   );
   --light-green-gradient-top: linear-gradient(
     180deg,
-    rgba(86, 175, 90, 0.8757878151260504) 0%,
-    rgba(255, 255, 255, 0.2091211484593838) 50%
+    rgba(68, 138, 15, 0.9206057422969187) 19%,
+    rgba(0, 0, 0, 0) 46%
   );
+
   --dark-green-gradient-top: linear-gradient(
     180deg,
     rgba(59, 92, 31, 0.8477766106442577) 0%,
@@ -197,14 +205,14 @@ nav {
   padding: 0;
 }
 
-.side-menu li a  {
+.side-menu li a {
   font-size: 1.1rem;
   font-family: "Dosis", sans-serif;
   letter-spacing: 0.05rem;
   font-weight: bold;
   border-radius: 20px;
   padding: 10px 20px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .navbar li a:hover {
@@ -217,7 +225,7 @@ nav {
 }
 
 .active {
-border: 1px solid var(--dark-purple);
+  border: 1px solid var(--dark-purple);
 }
 
 .side-menu li {
@@ -244,7 +252,6 @@ border: 1px solid var(--dark-purple);
 
 .support-us-wrapper a:hover {
   background-color: var(--light-green);
-  
 }
 
 /* ---------- LAYOUT ---------- */
@@ -353,7 +360,7 @@ main {
 }
 
 .ecology-card {
-  background-image: var(--dark-green-gradient-top),
+  background-image: var(--light-green-gradient-top),
     url(/img/ee-trash-and-boy.jpg);
 }
 
@@ -368,7 +375,6 @@ main {
 }
 .dinosaur-hero {
   background-image: url(/img/dinosaur-exhibit.jpg);
-  
 }
 
 .exhibit-information {
@@ -380,7 +386,7 @@ main {
 }
 
 .exhibit-information p {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .evolution-picture {
@@ -432,7 +438,7 @@ main {
 
 .event-information p {
   color: black;
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin-right: 20px;
 }
 
@@ -469,13 +475,13 @@ main {
 
 .visiting-hours-public-card h2 {
   color: black;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-bottom: 20px;
 }
 
 .visiting-hours-public-card h3 {
   color: black;
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin-bottom: 10px;
 }
 
@@ -486,7 +492,7 @@ main {
 }
 
 .peak-hours-card label {
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: var(--almost-gray);
   margin-top: 10px;
 }
@@ -500,7 +506,6 @@ main {
 .peak-hours-card img {
   max-width: 500px;
   margin-top: 50px;
-
 }
 
 .visiting-hours-school-card {
@@ -513,7 +518,7 @@ main {
 }
 
 .visiting-hours-school-card h3 {
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin-bottom: 10px;
 }
 
@@ -521,7 +526,7 @@ main {
   background-color: var(--dark-brown);
 }
 
-.opening-hours-research-card h2  {
+.opening-hours-research-card h2 {
   font-size: 1.5rem;
   padding-bottom: 20px;
 }
@@ -532,7 +537,7 @@ main {
 }
 
 .address-card {
-  background-color:var(--dark-purple);
+  background-color: var(--dark-purple);
 }
 
 .address-card h2 {
@@ -555,7 +560,7 @@ main {
   grid-template-rows: repeat(3, 1fr);
 }
 .volunteer-card {
-  background-image: var(--dark-blue-purple-top),
+  background-image: var(--purple-gradient-top-long),
     url(/img/kids-raising-hands.jpg);
 }
 
@@ -587,16 +592,18 @@ main {
 
 .newsletter-card h2 {
   font-size: 1.4rem;
+  color: black;
 }
 
 .newsletter-card h3 {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-bottom: 30px;
+  color: black;
 }
 
 .newsletter-card label {
-  color: var(--grey);
-  font-size: .9rem;
+  color: black;
+  font-size: 0.7rem;
 }
 
 #email {
@@ -619,7 +626,7 @@ main {
 }
 
 .fundraiser-card {
-  background-image: var(--purple-gradient-top), url(/img/stars.jpg);
+  background-image: var(--purple-gradient-top-long), url(/img/stars.jpg);
 }
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -800,9 +807,8 @@ main {
 @media screen and (min-width: 1450px) {
   .events-card h2 {
     font-size: 1.5rem;
-    
   }
-  
+
   .events-card p {
     font-size: 0.9rem;
   }
@@ -816,9 +822,8 @@ main {
 
   .events-card h2 {
     font-size: 2.5rem;
-    
   }
-  
+
   .events-card p {
     font-size: 1.5rem;
   }
