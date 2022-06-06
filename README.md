@@ -1,8 +1,8 @@
 # Your project title
 
 ![image](/img/musemum-screenshot.png)
-x
-A simple overview of the use/purpose of the project.
+
+The Community Science Museum was my first semester project
 
 ## Description
 
