@@ -6,7 +6,7 @@ The Community Science Museum was my first semester project at Noroff. This proje
 
 ## Description
 
-The task I was given for this project was to create a responsive website for the Museum. The design was intended to encourage customers to visit the museum, and the target audience was children aged 7 to 15 years. 
+The task I was given for this project was to create a responsive website for the Museum. The design was intended to encourage customers to visit the museum, and the target audience was children aged 7 to 15 years.
 This project is made entirely in HTML & CSS.
 
 ## Built With
@@ -16,10 +16,9 @@ This project is made entirely in HTML & CSS.
 
 ## Future Plans
 
-While this project works fine, I do have some ideas for changes I would like to make in the future. 
+While this project works fine, I do have some ideas for changes I would like to make in the future.
 
-[You can see the changelog here](https://github.com/SiriHoyas/The-Community-Science-Museum/blob/main/CHANGELOG.md)
-
+[You can see the planned improvements here](https://github.com/SiriHoyas/The-Community-Science-Museum/blob/main/IMPROVEMENTS.md)
 
 ## Getting Started
 
@@ -32,7 +31,6 @@ git clone git@github.com:SiriHoyas/The-Community-Science-Museum.git
 ```
 
 2. Open index.html in your favourite modern browser.
-
 
 ## Contact
 
