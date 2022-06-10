@@ -10,5 +10,5 @@
 ## Styling
 
 - Remove hover effects on cards. 
-- 
+- Fix elements expanding when clicked
 
